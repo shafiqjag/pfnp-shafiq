@@ -12,4 +12,8 @@ app.get('/edit/:motd', function (req, res) {
   res.send('Message updated')
 })
 
-app.listen(3000)
+app.get('/test', function (req, res) {
+  res.send()
+})
+
+app.listen(process.env.PORT || 3000)
